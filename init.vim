@@ -79,6 +79,7 @@ nnoremap J mzJ`Z
 nnoremap <C-j> :cnext<CR>zzzv
 nnoremap <Esc> :nohlsearch<CR>
 imap jj <Esc>
+imap kj <Esc>
 imap jk <Esc>
 
 "nnoremap <leader>f zc
