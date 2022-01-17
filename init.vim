@@ -1,7 +1,8 @@
 " Don't try to be vi compatible
 set nocompatible
+
 " Helps force plugins to load correctly when it is turned back on below
-"f letype off
+filetype off
 
 call plug#begin('~/.vim/plugged')
 
@@ -10,15 +11,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
-Plug 'kien/ctrlp.vim'
-Plug 'ErichDonGubler/vim-sublime-monokai'
-Plug 'morhetz/gruvbox'
-Plug 'kana/vim-arpeggio'
 
 call plug#end()
 
 " Turn on syntax highlighting
 syntax on
+
+"colorscheme ron
 colorscheme sublimemonokai
 let g:sublimemonokai_term_italic = 1
 
@@ -26,8 +25,6 @@ set relativenumber
 
 " For plugins to load correctly
 filetype plugin indent on
-
-let mapleader = " "
 
 " Security
 set modelines=0
@@ -61,35 +58,30 @@ set hidden
 set guitablabel=\[%N\]\ %t\ %M 
 
 " Visualize tabs and newlines
-set listchars=tab:▸\ 
+set listchars=tab:▸\
+"
+"Toggle tabs and EOL
 map <leader>l :set list!<CR> " Toggle tabs and EOL
-:nohls
+let mapleader = " "
 
-set list!
-
+nnoremap <leader>y "+y
+nnoremap <leader>d "+d
 nnoremap <leader>p "+p
-nnoremap <leader>y "*y
-nnoremap <leader>n :NERDTree<CR>
-nnoremap <leader>v :e $MYVIMRC<CR>
-nnoremap <leader>r :w <bar> :source $MYVIMRC<CR>
-
-nnoremap <leader>h gT
-nnoremap <leader>l gt
-
+nnoremap <leader>q :NERDTree<CR>
+nnoremap <leader>vs :e $MYVIMRC<CR>
+nnoremap <S-h> g<S-t>
+nnoremap <S-l> gt
+nnoremap <leader>f zc
+nnoremap <leader>u zo
+nnoremap <S-e> $
+nnoremap <S-t> ^
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
-nnoremap J mzJ`Z
 nnoremap <C-j> :cnext<CR>zzzv
 nnoremap <Esc> :nohlsearch<CR>
-imap jj <Esc>
-imap jk <Esc>
-imap kj <Esc>
 
-"nnoremap <leader>f zc
-"nnoremap <leader>u zo
-"nnoremap <leader>w 8<C-w>>
-"nnoremap <leader>q  8<C-w-w><
+:command! R w <bar> source $MYVIMRC
 
 :se autochdir
-"cd C:/Users/ze9662sc/Documents/Coding/
+cd C:/Users/matth/Documents/Coding/
