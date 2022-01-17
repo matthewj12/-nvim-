@@ -13,6 +13,7 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'morhetz/gruvbox'
+Plug 'kana/vim-arpeggio'
 
 call plug#end()
 
@@ -67,11 +68,14 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 set list!
 
 nnoremap <leader>p "+p
+nnoremap <leader>y "*y
 nnoremap <leader>n :NERDTree<CR>
 nnoremap <leader>v :e $MYVIMRC<CR>
 nnoremap <leader>r :w <bar> :source $MYVIMRC<CR>
-nnoremap <leader>h :bp<CR>
-nnoremap <leader>l :bn<CR>
+
+nnoremap <leader>h gT
+nnoremap <leader>l gt
+
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
@@ -79,8 +83,8 @@ nnoremap J mzJ`Z
 nnoremap <C-j> :cnext<CR>zzzv
 nnoremap <Esc> :nohlsearch<CR>
 imap jj <Esc>
-imap kj <Esc>
 imap jk <Esc>
+imap kj <Esc>
 
 "nnoremap <leader>f zc
 "nnoremap <leader>u zo
@@ -88,4 +92,4 @@ imap jk <Esc>
 "nnoremap <leader>q  8<C-w-w><
 
 :se autochdir
-cd C:/Users/ze9662sc/Documents/Coding/
+"cd C:/Users/ze9662sc/Documents/Coding/
