@@ -64,17 +64,15 @@ set listchars=tab:▸\
 map <leader>l :set list!<CR> " Toggle tabs and EOL
 let mapleader = " "
 
-nnoremap <leader>y "+y
-nnoremap <leader>d "+d
+"nnoremap <leader>y "+y
+"nnoremap <leader>d "+d
 nnoremap <leader>p "+p
 nnoremap <leader>q :NERDTree<CR>
-nnoremap <leader>vs :e $MYVIMRC<CR>
+nnoremap <leader>ve :e $MYVIMRC<CR>
 nnoremap <S-h> g<S-t>
 nnoremap <S-l> gt
 nnoremap <leader>f zc
 nnoremap <leader>u zo
-nnoremap <S-e> $
-nnoremap <S-t> ^
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
