@@ -80,6 +80,9 @@ nnoremap N Nzzzv
 nnoremap J mzJ`z
 nnoremap <C-j> :cnext<CR>zzzv
 nnoremap <Esc> :nohlsearch<CR>
+inoremap jk <Esc>
+inoremap kj <Esc>
+inoremap jj <Esc>
 
 :command! R w <bar> source $MYVIMRC
 
