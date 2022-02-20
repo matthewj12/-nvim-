@@ -66,7 +66,7 @@ set list!
 nnoremap <leader>y "+y
 nnoremap <leader>d "+d
 nnoremap <leader>p "+p
-nnoremap <leader>q :NERDTree<CR>
+nnoremap <leader>n :NERDTree<CR>
 nnoremap <leader>ve :e $MYVIMRC<CR>
 nnoremap n nzzzv
 nnoremap N Nzzzv
