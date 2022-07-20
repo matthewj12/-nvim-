@@ -63,16 +63,37 @@ map <leader>l :set list!<CR> " Toggle tabs and EOL
 
 set list!
 
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
+
+nnoremap <leader>q :q<CR>
+nnoremap <leader>fq :q!<CR>
+nnoremap <leader>wq :wq<CR>
+nnoremap <leader>wqa :wqa<CR>
+
 nnoremap <leader>y "+y
 nnoremap <leader>d "+d
 nnoremap <leader>p "+p
 nnoremap <leader>n :NERDTree<CR>
 nnoremap <leader>ve :e $MYVIMRC<CR>
+
+nnoremap <leader>, 10<C-w><
+nnoremap <leader>. 10<C-w>>
+nnoremap <leader>- 5<C-w>-
+nnoremap <leader>= 5<C-w>+
+
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap <S-h> g<S-t>
 nnoremap <S-l> gt
-nnoremap <C-j> :cnext<CR>zzzv
+"nnoremap <C-j> :cnext<CR>zzzv
 nnoremap <Esc> :nohlsearch<CR>
 inoremap jk <Esc>
 inoremap kj <Esc>
