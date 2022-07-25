@@ -108,3 +108,5 @@ inoremap jj <Esc>
 
 :se autochdir
 "cd C:/Users/matth/Documents/Coding/
+
+lets fucking gooooooooooo!
