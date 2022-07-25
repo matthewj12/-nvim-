@@ -100,13 +100,9 @@ inoremap kj <Esc>
 inoremap jj <Esc>
 :command! R w <bar> source $MYVIMRC
 
-
-:se autochdir
-"cd C:/Users/matth/Documents/Coding/
 :command! R w <bar> source $MYVIMRC
 
-
 :se autochdir
-"cd C:/Users/matth/Documents/Coding/
+"cd C:/Users/Matthew/Documents/Coding/
 
 lets fucking gooooooooooo!
