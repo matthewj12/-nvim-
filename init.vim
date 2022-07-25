@@ -103,6 +103,4 @@ inoremap jj <Esc>
 :command! R w <bar> source $MYVIMRC
 
 :se autochdir
-"cd C:/Users/Matthew/Documents/Coding/
-
-lets fucking gooooooooooo!
+"cd ___default_dir___
