@@ -10,6 +10,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'morhetz/gruvbox'
+Plug 'folke/which-key.nvim'
+
+lua << EOF
+  require("which-key").setup {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
+EOF
 
 call plug#end()
 
@@ -78,9 +87,6 @@ nnoremap <leader>fq :q!<CR>
 nnoremap <leader>wq :wq<CR>
 nnoremap <leader>wqa :wqa<CR>
 
-nnoremap <leader>y "+y
-nnoremap <leader>d "+d
-nnoremap <leader>p "+p
 nnoremap <leader>n :NERDTree<CR>
 nnoremap <leader>ve :e $MYVIMRC<CR>
 
